@@ -24,7 +24,8 @@
 
     var barChart = d3.selectAll('#plot').append('svg').style('width', '100%').style('height', '100%');
     var width = 25;
-    var height = 9.5;
+    var height = 9;
+
 
     
     console.log(zipCount)
@@ -49,10 +50,17 @@
         .attr('height', height)
         .attr('id', (d,i) => {return "z" + d['0']})
 
+
     g.append('text')
         .attr('x', 0)
         .attr('y', (d,i) => {return 15+(height+5)*i})
         .text((d,i) => {return d['0'];})
+
+    g.append("text")
+        .attr("x", 350)
+        .attr("y", (d,i) => {return 11+(height+5)*i})
+        .attr("dy", ".2em")
+        .text((d) => { return d['1']; });
 
     }
 
@@ -127,14 +135,14 @@
     <style>
         #map { 
             position: absolute;
-            width: 65%;
+            width: 58%;
             height: 100%; 
         }
 
         #plot {
             position: absolute;
-            left: 66%;
-            width: 35%;
+            left: 59%;
+            width: 40%;
             height: 100%; 
         }
     </style>
