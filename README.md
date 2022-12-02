@@ -6,7 +6,7 @@ https://sites.google.com/uic.edu/cs424-p3
 
 
 ## Github Repository Description
-This repository has the html I used on the google site, seperated by graph. 
+This repository has the exact html I used on the google site, seperated by graph. In the test section it has the html/javascript seperated to make it a bit more readable. These were the files where I did my original testing of the graphs on.
 
 ## Data Set Description
 
@@ -36,4 +36,62 @@ zipCode: d['zip'],(Zip Code: added using pandas, the zip code of where the trip 
 roundTrip: d['StartEqEnd'], (Round Trip: added using pandas, returns 1 if the trip starts and ends at the same location else returns 0)</br>
 timeTook: d['TimeTook'], (Time Took: added using pandas, The time in minutes that the trip took, calculated by subtracting start time from end time)</br>
 rideId: d['ride_id'] (Ride Id: id for each ride)</br>
+
+## Question: Who makes up the bulk of travel time on Divvy bikes during the fourth of July week/weekend?  // How does the mean trip time differ between members and casual users by day and by hour for July 1st to July 8th? What is the ratio of members to casual users?
+
+</br>
+
+The first thing I want to examine is general usage of the bikes, to do this I looked at the mean time each user took on trips over a time period between both the casual and member users. 
+
+</br>
+### Hypothesis
+
+I believe that mean trip times will be higher for both groups through the weekend (especially as it is a holiday weekend), I would also include Monday as part of this trend. Additionally, I expect through the weekend members and casual bikers will have equal mean trips but in the week, I expect member bikers will have lower mean trip times as they tend to have a regular route they are going on.
+
+Additionally, through the hours, the loop zip codes will be more popular during day hours as workers will be biking and tourists exploring the city. However, the ratios will remain fairly similar throughout the day.
+
+
+
+### Why
+
+I decided to first look at how does the mean trip time differ between members and casual users by day from July 1st to July 8th?
+
+For this first visualization I chose a line graph as I was watching two (member versus casual) quantities (average trip length) changing over time (by day).
+
+The second visualization in comparison to  question 1, this graph was created two quantities(the count of the hour, the mean time the trip took). Thus, I used a scatter plot. This data is split into categories between zip codes. So it calculates the mean time at each hour for each zip code. Then the dots are colored based on this. I decided to make the scatterplot interactable and adding a bar chart to the side. When you select the different points in the scatterplot, the bar chart shows the number of riders split between the zip codes selected. I chose to do this to see if the ratio changed based on time.
+
+
+
+### Findings
+
+I discovered that through the entire week, member riders have a distinctly lower mean trip time than a casual rider. Additionally the mean trip time significantly peaks for casual riders on the weekend, however there is a bit less of a spike of the mean trip time for the member users in the weekend.
+
+Further down, I look at how the mean time of a trip compares to hour of the day and how that is distributed among casual and member bikers.
+
+For the scatter plot shown below it can be seen that the mean time took by hour appears more constant for member users than casual users where there is a dip in trip duration during the early morning/evening and a peak from 10:00am - 2:00pm
+
+Additionally, there are fairly equal member and casual riders through this week
+
+Finally, Through the hours, the loop zip codes will be more popular during day hours as workers will be biking and tourists exploring the city. However, the ratios will remain fairly similar throughout the day.
+
+
+### Plots
+#### Mean trip time a rider took split by member and casual riders over the week
+![mean trip time](Photos/MeanTripTime.png)
+
+#### Mean trip time a rider took split by member and casual riders over the week (Casual View)
+![mean trip time: casual view](Photos/MeanTripTime1.png)
+
+#### Mean trip time a rider took split by member and casual riders over the week (Member View)
+![mean trip time: member view](Photos/MeanTripTime2.png)
+
+#### Member versus casual user, mean trip time by hour the trip started. 
+![mean trip time Interactable bar graph/scatter](Photos/memberCasInteractable.png)
+
+#### Member versus casual user, mean trip time by hour the trip started. 5 am view
+![mean trip time Interactable bar graph/scatter 5 am](Photos/memberCasInteractable5.png)
+
+#### Member versus casual user, mean trip time by hour the trip started. 11 am view
+![mean trip time Interactable bar graph/scatter 11 am](Photos/memberCasInteractable11.png)
+</br>
 
