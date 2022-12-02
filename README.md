@@ -55,7 +55,7 @@ Zip Codes that are closer to the lake, have higher ridership. Addtitionally, thr
 
 
 ### Why
-I wanted to look at zip code frequency and see how does the mean trip change by zip code and by hour. Do people take longer trips in the day, or ngith? 
+I wanted to look at zip code frequency and see how does the mean trip change by zip code and by hour. Do people take longer trips in the day, or night? 
 
 I decided to approach this in two part. With a a bar chart and a scatter plot (which are interactable)
 
@@ -65,6 +65,9 @@ I first decided to look at how does the number of rides distribute across Chicag
 
 In comparison then I decided to shift from the bar graph to the interactable. The interactable graph was created two quantities(the count of the hour, the mean time the trip took). Thus, I used a scatter plot. This data is split into categories between zip codes. So it calculates the mean time at each hour for each zip code. Then the dots are colored based on this. I decided to make the scatterplot interactable and adding a bar chart to the side. When you select the different points in the scatterplot, the bar chart shows the number of riders split between the zip codes selected. I chose to do this to see if the ratio changed based on time.
 
+### Spatial View
+
+As I wanted to also view this through a spatial view as I found it    
 
 ### Findings
 Through the first graph it was found that a large majority of rides start in the 60614 zip code, followed by 60611. This is similar to my hypothesis as these zip codes are near Lincoln Park/the lake front, and north loop respectively.
