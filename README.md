@@ -37,7 +37,63 @@ roundTrip: d['StartEqEnd'], (Round Trip: added using pandas, returns 1 if the tr
 timeTook: d['TimeTook'], (Time Took: added using pandas, The time in minutes that the trip took, calculated by subtracting start time from end time)</br>
 rideId: d['ride_id'] (Ride Id: id for each ride)</br>
 
-## Question: Who makes up the bulk of travel time on Divvy bikes during the fourth of July week/weekend?  // How does the mean trip time differ between members and casual users by day and by hour for July 1st to July 8th? What is the ratio of members to casual users?
+
+# Data & Domain Questions
+
+In going through this project, there were four main areas I wanted to examine, zip code trip frequency, mean trip time depending on bike type, mean trip time depending on user type (member vs. casual), and ratio of user type (member and casual) that start and end at the same station.
+
+1. Domain: Where to do most users start their trips and does their location change how long they ride for? // Data: How does the number of rides distribute across Chicago zip codes? How does the mean trip time by hour of day change by Zip Code (and how does that distribute by zip code)?
+2. Who makes up the bulk of travel time on Divvy bikes during the fourth of July week/weekend?  // How does the mean trip time differ between members and casual users by day and by hour for July 1st to July 8th? What is the ratio of members to casual users?
+
+
+##  Domain: Where to do most users start their trips and does their location change how long they ride for? // Data: How does the number of rides distribute across Chicago zip codes? How does the mean trip time by hour of day change by Zip Code (and how does that distribute by zip code)?
+
+</br>
+
+### Hypotheses
+Zip Codes that are closer to the lake, have higher ridership. Addtitionally, through the hours, the loop zip codes will be more popular during day hours as workers will be biking and tourists exploring the city. However, the ratios will remain fairly similar throughout the day.
+
+
+### Why
+I wanted to look at zip code frequency and see how does the mean trip change by zip code and by hour. Do people take longer trips in the day, or ngith? 
+
+I decided to approach this in two part. With a a bar chart and a scatter plot (which are interactable)
+
+</br>
+
+I first decided to look at how does the number of rides distribute across Chicago zip codes. For this visualization I chose a bar chart. This is due to seeing how a quantity(# of rides) compares to a category(zip codes)
+
+In comparison then I decided to shift from the bar graph to the interactable. The interactable graph was created two quantities(the count of the hour, the mean time the trip took). Thus, I used a scatter plot. This data is split into categories between zip codes. So it calculates the mean time at each hour for each zip code. Then the dots are colored based on this. I decided to make the scatterplot interactable and adding a bar chart to the side. When you select the different points in the scatterplot, the bar chart shows the number of riders split between the zip codes selected. I chose to do this to see if the ratio changed based on time.
+
+
+### Findings
+Through the first graph it was found that a large majority of rides start in the 60614 zip code, followed by 60611. This is similar to my hypothesis as these zip codes are near Lincoln Park/the lake front, and north loop respectively.
+
+There are some higher mean times than expected in a few zip codes. However the cumulative riders are less than 5 so it is likely one ride which is bring up the mean time.
+
+Additionally you can see there are no large peaks of when the mean time is larger by zip code. The count of riders increases during daytime hours which is to be expected.
+
+</br>
+
+### Plots
+
+
+
+#### Zip Code Interactable w/ scatter and bar chart
+![zip Code Interactabl bar graph/scatter](Photos/zipInteractableAll.png)
+
+#### Zip Code Interactable w/ scatter and bar chart: 4am
+![zip Code Interactabl bar graph/scatter 4am](Photos/zipInteractable4.png)
+
+#### Zip Code Interactable w/ scatter and bar chart: 6am
+![zip Code Interactabl bar graph/scatter 4am](Photos/zipInteractable6.png)
+
+#### Zip Code Interactable w/ scatter and bar chart: 11am
+![zip Code Interactabl bar graph/scatter 11am](Photos/zipInteractable11.png)
+
+</br>
+
+## Question: Domain: Who makes up the bulk of travel time on Divvy bikes during the fourth of July week/weekend?  //  Data: How does the mean trip time differ between members and casual users by day and by hour for July 1st to July 8th? What is the ratio of members to casual users?
 
 </br>
 
