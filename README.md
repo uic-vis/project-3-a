@@ -97,6 +97,15 @@ Additionally you can see there are no large peaks of when the mean time is large
 #### Zip Code Interactable w/ scatter and bar chart: 11am
 ![zip Code Interactabl bar graph/scatter 11am](Photos/zipInteractable11.png)
 
+#### Zip Code Spatial View w/ corresponding bar chart
+![zip Code Spatial bar graph](Photos/spatial_non.png)
+
+#### Zip Code Spatial View w/ corresponding bar chart: 60607 (UIC)
+![zip Code Spatial bar graph](Photos/spatial_60607.png)
+
+#### Zip Code Spatial View w/ corresponding bar chart: 60645
+![zip Code Spatial bar graph](Photos/spatial_60645.png)
+
 </br>
 
 ## Question: Domain: Who makes up the bulk of travel time on Divvy bikes during the fourth of July week/weekend?  //  Data: How does the mean trip time differ between members and casual users by day and by hour for July 1st to July 8th? What is the ratio of members to casual users?
