@@ -79,6 +79,8 @@ There are some higher mean times than expected in a few zip codes. However the c
 
 Additionally you can see there are no large peaks of when the mean time is larger by zip code. The count of riders increases during daytime hours which is to be expected.
 
+Finally as we added a spatial view you can see the closer to the lake there are more stations, however as you get furthere away there are less riders, and there are certain Chicago zip codes with no Divvy stations (such as new O'hare). 
+
 </br>
 
 ### Plots
