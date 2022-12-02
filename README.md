@@ -67,10 +67,10 @@ In comparison then I decided to shift from the bar graph to the interactable. Th
 
 ### Spatial View
 
-As I wanted to also view this through a spatial view as to get a better view of where the count of people were located. 
+I wanted to also view this through a spatial view as to get a better view of where the count of people were located as rather than just having the value of the count, you can actually see on the map where is is located and look at more popular areas from a glance by using colors.
 To do this I created a view using a geojson by zipcode where blue means more riders and yellow means less riders at the Zip Code. 
 
-Additionally, there is a bar graph that shows the count of riders based on the zipcode. When you hover over the zipcode it highlights the barchart.
+Additionally, there is a bar graph that shows the count of riders based on the zipcode. When you hover over the zipcode it highlights the barchart. On the right hand axis is the number of rides, on the left hand axis is the zip code.
 
 ### Findings
 Through the first graph it was found that a large majority of rides start in the 60614 zip code, followed by 60611. This is similar to my hypothesis as these zip codes are near Lincoln Park/the lake front, and north loop respectively.
