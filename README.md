@@ -51,7 +51,7 @@ In going through this project, there were four main areas I wanted to examine, z
 2. Who makes up the bulk of travel time on Divvy bikes during the fourth of July week/weekend?  // How does the mean trip time differ between members and casual users by day and by hour for July 1st to July 8th? What is the ratio of members to casual users?
 
 
-##  Domain: Where to do most users start their trips and does their location change how long they ride for? // Data: How does the number of rides distribute across Chicago zip codes? How does the mean trip time by hour of day change by Zip Code (and how does that distribute by zip code)?
+##  Question 1: Domain: Where to do most users start their trips and does their location change how long they ride for? // Data: How does the number of rides distribute across Chicago zip codes? How does the mean trip time by hour of day change by Zip Code (and how does that distribute by zip code)?
 
 </br>
 
@@ -115,7 +115,7 @@ Finally as we added a spatial view you can see the closer to the lake there are 
 
 </br>
 
-## Question: Domain: Who makes up the bulk of travel time on Divvy bikes during the fourth of July week/weekend?  //  Data: How does the mean trip time differ between members and casual users by day and by hour for July 1st to July 8th? What is the ratio of members to casual users?
+## Question 2: Domain: Who makes up the bulk of travel time on Divvy bikes during the fourth of July week/weekend?  //  Data: How does the mean trip time differ between members and casual users by day and by hour for July 1st to July 8th? What is the ratio of members to casual users?
 
 </br>
 
