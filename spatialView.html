@@ -91,7 +91,7 @@
 
     function highlightFeature(e) {
         var layer = e.target;
-    
+
         layer.setStyle({
             weight: 5,
             color: '#ffffff',
@@ -100,7 +100,7 @@
         });
         
         var selectedZip = layer.feature.properties.zip.substring(0,5);
-        d3.selectAll("#z"+selectedZip).style('fill', 'rgb(120,50,50)')
+        d3.selectAll("#z"+selectedZip).style('fill', 'rgb(37,52,148)')
 
         layer.bringToFront();
     }
