@@ -4,7 +4,10 @@
 
 https://sites.google.com/uic.edu/cs424-p3
 
+</br> 
+You can view the spatial view I created at the bottom of the page at https://sites.google.com/uic.edu/cs424-p3/zip-code
 
+</br>
 ## Github Repository Description
 This repository has the exact html I used on the google site, seperated by graph. In the test section it has the html/javascript seperated to make it a bit more readable. These were the files where I did my original testing of the graphs on.
 
@@ -67,10 +70,10 @@ In comparison then I decided to shift from the bar graph to the interactable. Th
 
 ### Spatial View
 
-As I wanted to also view this through a spatial view as to get a better view of where the count of people were located. 
+I wanted to also view this through a spatial view as to get a better view of where the count of people were located as rather than just having the value of the count, you can actually see on the map where is is located and look at more popular areas from a glance by using colors.
 To do this I created a view using a geojson by zipcode where blue means more riders and yellow means less riders at the Zip Code. 
 
-Additionally, there is a bar graph that shows the count of riders based on the zipcode. When you hover over the zipcode it highlights the barchart.
+Additionally, there is a bar graph that shows the count of riders based on the zipcode. When you hover over the zipcode it highlights the barchart. On the right hand axis is the number of rides, on the left hand axis is the zip code.
 
 ### Findings
 Through the first graph it was found that a large majority of rides start in the 60614 zip code, followed by 60611. This is similar to my hypothesis as these zip codes are near Lincoln Park/the lake front, and north loop respectively.
@@ -78,6 +81,8 @@ Through the first graph it was found that a large majority of rides start in the
 There are some higher mean times than expected in a few zip codes. However the cumulative riders are less than 5 so it is likely one ride which is bring up the mean time.
 
 Additionally you can see there are no large peaks of when the mean time is larger by zip code. The count of riders increases during daytime hours which is to be expected.
+
+Finally as we added a spatial view you can see the closer to the lake there are more stations, however as you get furthere away there are less riders, and there are certain Chicago zip codes with no Divvy stations (such as new O'hare). 
 
 </br>
 
@@ -96,6 +101,15 @@ Additionally you can see there are no large peaks of when the mean time is large
 
 #### Zip Code Interactable w/ scatter and bar chart: 11am
 ![zip Code Interactabl bar graph/scatter 11am](Photos/zipInteractable11.png)
+
+#### Zip Code Spatial View w/ corresponding bar chart
+![zip Code Spatial bar graph](Photos/spatial_non.png)
+
+#### Zip Code Spatial View w/ corresponding bar chart: 60607 (UIC)
+![zip Code Spatial bar graph](Photos/spatial_60607.png)
+
+#### Zip Code Spatial View w/ corresponding bar chart: 60645
+![zip Code Spatial bar graph](Photos/spatial_60645.png)
 
 </br>
 
