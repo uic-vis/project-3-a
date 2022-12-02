@@ -8,6 +8,8 @@ https://sites.google.com/uic.edu/cs424-p3
 You can view the spatial view I created at the bottom of the page at https://sites.google.com/uic.edu/cs424-p3/zip-code
 
 </br>
+
+
 ## Github Repository Description
 This repository has the exact html I used on the google site, seperated by graph. In the test section it has the html/javascript seperated to make it a bit more readable. These were the files where I did my original testing of the graphs on.
 
